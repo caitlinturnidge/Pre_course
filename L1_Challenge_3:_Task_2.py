@@ -30,11 +30,11 @@ def product_numbers(n):
 
 def which_calculation(n):
       while True:    
-          m = input('Would you like to work out the product or sum of numbers from 1 to ' +  str(n) +  ' ? ')
-          if m == "sum":       
+          user_choice = input('Would you like to work out the product or sum of numbers from 1 to ' +  str(n) +  ' ? ')
+          if user_choice == "sum":       
              print("\nThe sum of numbers from 1 to", n, "is" ,sum_numbers(n), "\n")
              break 
-          elif m == "product":
+          elif user_choice == "product":
              print("The product of numbers from 1 to", n, "is", product_numbers(n), "\n")    
              break 
           else:
@@ -42,6 +42,6 @@ def which_calculation(n):
 
 n = ask_user_for_number()                
               
-m = which_calculation(n)        
+user_choice = which_calculation(n)        
 
 
