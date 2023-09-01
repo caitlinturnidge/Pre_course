@@ -1,0 +1,3 @@
+#Global Scope
+
+#Local Scope
