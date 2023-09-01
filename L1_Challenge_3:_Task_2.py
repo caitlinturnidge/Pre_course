@@ -26,10 +26,22 @@ def product_numbers(n):
     for i in range(1,n+1):
         sum = sum * i
     return sum
-    
-n = ask_user_for_number()   
-print("The sum of numbers from 1 to", n, "is" ,sum_numbers(n), "\n")
-p = ask_user_for_number()   
-print("The sum of numbers from 1 to", p, "which are a multiple of three or five is", sum_specific_numbers(p), "\n")
-m = ask_user_for_number() 
-print("The product of numbers from 1 to", m, "is", product_numbers(m), "\n")
+
+
+def which_calculation(n):
+      while True:    
+          m = input('Would you like to work out the product or sum of numbers from 1 to ' +  str(n) +  ' ? ')
+          if m == "sum":       
+             print("\nThe sum of numbers from 1 to", n, "is" ,sum_numbers(n), "\n")
+             break 
+          elif m == "product":
+             print("The product of numbers from 1 to", n, "is", product_numbers(n), "\n")    
+             break 
+          else:
+              print("Not a valid input")   
+
+n = ask_user_for_number()                
+              
+m = which_calculation(n)        
+
+
