@@ -1,10 +1,6 @@
 name = input('What is your name? ');
 
-if (name == "Alice"):
- print(f"Hello {name.capitalize()}!");
-
-
-elif (name == "Bob"):
+if (name == "Alice" or name == "Bob"):
  print(f"Hello {name.capitalize()}!");
 
 else: 
