@@ -16,7 +16,7 @@ def add_to_dictionary(dictionary):
     employed = input("Are they employed? ")
     dictionary[str(name)] = {}
     dictionary[str(name)]['Age'] = age
-    dictionary[str(name)]['employed'] = employed
+    dictionary[str(name)]['Employed'] = employed
 
 
 def delete_from_dictionary(dictionary):

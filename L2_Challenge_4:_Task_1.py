@@ -1,3 +1,4 @@
-#Global Scope
+#Global Scope - Variables and functions declared in the global scope can be used throughout the entire program. Any function or block of code can access these functions and variables. Global variables are useful for relatively constant values or when multiple functions need to access them, but they should not be used often as they can be hard to debug and test.
 
-#Local Scope
+
+#Local Scope - Variables and functions declared in the local scope cannot be used throughout the entire program, they can only be accessed inside the function in which they are declared. Local variables are only recognised by the function they are declared in, they are beneficial as they are deleted as soon as the function is over, so they release the memory space in which it occupied. Local variables are more testable and generally easier to debug.

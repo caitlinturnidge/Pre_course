@@ -18,3 +18,5 @@ def say_hello_to_pets(pets):
 
 if __name__ == "__main__":
   say_hello_to_pets(animals)
+
+#cause of error: function could not access the name of the pet using pet.name, need to use pet["name"]
